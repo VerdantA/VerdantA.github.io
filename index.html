@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cat Adoption Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Cat Adoption Survey Form</h1>
+    <p id="description">Interested in adopting one of our cats? Enter your contact information and preferences here.</p>
+    <form method="post" id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" name="name" type="text" placeholder="Enter your full name" required /></label>
+        <label id="email-label" for="email">Email: <input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+        <label for="phone">Contact Phone Number:<input id="phone" name="phone" type="tel" placeholder="Enter a phone number we can contact you at" required></label>
+        <label id="number-label" for="number">Age:<input id="number" name="number" type="number" min="18" max="120" placeholder="Must be over 18 to adopt" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>Do you have any specific preferences in a cat?</legend>
+        <label for="dropdown">Gender?
+          <select id="dropdown" name="gender">
+            <option value="">(Any)</option>
+            <option value="1">Female</option>
+            <option value="2">Male</option>
+          </select>
+        </label>
+
+        <p>What age are you interested in?</p>
+        <label for="kitten"><input id="kitten" type="checkbox" name="age" value="kitten" checked> Kitten (up to 18 months)</label>
+        <label for="adolescent"><input id="adolescent" type="checkbox" name="age" value="adolescent"> Adolescent (older than 18 months)</label>
+        <label for="adult"><input id="adult" type="checkbox" name="age" value="adult"> Adult (older than 3 years)</label>
+        <label for="senior"><input id="senior" type="checkbox" name="age" value="senior"> Senior (older than 6 to 10 years)</label>
+
+        <p>Does everyone in the household agree to adopt a cat/dog at this time?</p>
+        <label for="Yes"><input id="Yes" type="radio" name="name" value="Yes" class="inline" checked /> Yes</label>
+        <label for="No"><input id="No" type="radio" name="name" value="No" class="inline" /> No</label>
+      </fieldset>
+      <fieldset>
+        <label for="why">Why do you want to adopt this new cat?
+          <textarea id="why" name="why" rows="4" cols="30" placeholder="Type your response here..."></textarea>
+        </label>
+      </fieldset>
+
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+
+</html>
